@@ -27,10 +27,10 @@ date || credit || debit || balance
 
 ### Tech used
 
-JavaScript
-Jest
-ESLint
-npm
+* JavaScript
+* Jest
+* ESLint
+* npm & yarn
 
 ### Setup
 
