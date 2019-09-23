@@ -7,3 +7,8 @@ beforeEach(() => {
 test('adds credit of 1000 on date 10012012', () => {
   expect(bank.addsCredit(10012012, 1000)).toEqual([10012012, 1000, 0]);
 });
+
+test('adds to balance', () => {
+  bank.addsCredit(10012012, 1000);
+  expect(bank.addsToBalance()).toBe(1000);
+});
