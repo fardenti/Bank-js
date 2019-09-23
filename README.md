@@ -25,6 +25,26 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 ```
 
+### User story
+
+```
+As a user
+So that I can add monies to my bank account
+I would like to be able make deposits
+```
+
+```
+As a user
+So that I can add user my monies
+I would like to be able withdraw monies
+```
+
+```
+As a user
+So that I can see my transactions
+I would like to be able print my bank statement
+```
+
 ### Tech used
 
 * JavaScript

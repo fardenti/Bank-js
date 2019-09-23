@@ -1,4 +1,12 @@
-function bank() {
-  return 1000;
+function Bank() {
+  this.balance = 0;
+  this.statement = {}
 }
-module.exports = bank;
+
+  Bank.prototype.addsCredit = function(date, credit){
+      let array = [date, credit, 0]
+       return array;
+      
+  }
+
+module.exports = Bank;
