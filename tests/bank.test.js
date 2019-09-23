@@ -1,0 +1,1 @@
+const bank = require('../js/bank');
