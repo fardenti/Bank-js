@@ -19,3 +19,12 @@ test('withdraws 500 with balance of 1000', () => {
   transaction.withdraw(500)
   expect(transaction.balance).toEqual(500);
 });
+
+test('returns another current date in format of day/month/year', () => {
+  expect(transaction.dateFormatter()).toEqual("09/24/2019");
+});
+
+test('returns another date in format of day/month/year', () => {
+  expect(transaction.dateFormatter(new Date("10-01-2012"))).toEqual("10/01/2012");
+});
+
