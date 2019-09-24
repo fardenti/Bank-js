@@ -1,4 +1,4 @@
-const Transaction = require('../js/Transaction');
+const Transaction = require('../js/transaction');
 
 beforeEach(() => {
   transaction = new Transaction();
