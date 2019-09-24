@@ -1,20 +1,19 @@
 class Transaction{
   constructor(){
     this._balance = 0;
-    this.data = [];
   }
   get balance(){
     return this._balance;
   }
 
-  deposit(date, credit, debit = 0){
-    this.data.push(date, credit, debit)
-    return this.data
+  deposit(date, credit){
+    this._balance += credit
   }
 
-  updateBalance(){
-    this._balance += this.data[1]
+  withdraw(date, debit){
+    this._balance -= debit
   }
 }
+
 
 module.exports = Transaction;

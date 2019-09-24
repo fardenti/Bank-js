@@ -4,12 +4,18 @@ beforeEach(() => {
   transaction = new Transaction();
 });
 
-test('adds credit of 1000 on date 10012012', () => {
-  expect(transaction.deposit(10012012, 1000)).toEqual([10012012, 1000, 0]);
+test('balance is 0', () => {
+  expect(transaction._balance).toEqual(0);
 });
 
-test('updates and returns balance', () => {
-  transaction.deposit(10012012, 1000)
-  transaction.updateBalance();
-  expect(transaction.balance).toBe(1000);
+test('adds credit of 1000 on date "10/01/2012"', () => {
+  transaction.deposit("10/01/2012", 1000)
+  expect(transaction.balance).toEqual(1000);
+});
+
+
+test('withdraws 500 on date "11/01/2012"', () => {
+  transaction.deposit("10/01/2012", 1000)
+  transaction.withdraw("11/01/2012", 500)
+  expect(transaction.balance).toEqual(500);
 });
