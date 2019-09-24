@@ -3,7 +3,6 @@ class Printer{
     this._transaction = transaction;
   }
 
-
   get transactionBalance(){
     return this._transaction.balance
   }

@@ -6,11 +6,11 @@ class Transaction{
     return this._balance;
   }
 
-  deposit(date, credit){
+  deposit(credit){
     this._balance += credit
   }
 
-  withdraw(date, debit){
+  withdraw(debit){
     this._balance -= debit
   }
 }
