@@ -10,8 +10,17 @@ test('adds deposit to balance', () => {
 });
 
 test('withdraws amount from balance', () => {
-  expect(bank.withdraw(500)).toEqual(-500);
+  bank.deposit(1000);
+  expect(bank.withdraw(500)).toEqual(500);
 });
+
+
+test('throws an error if withdraw amount is more than available balance', () => {
+  expect(() => {
+    bank.withdraw(500);
+  }).toThrow('not enough funds, try another amount');
+});
+
 // test('returns date in format of mm/dd/yyyy', () => {
 //   MockDate.set('09-24-2019');
 //   expect(bank.dateFormatter(new Date())).toEqual('09/24/2019');
