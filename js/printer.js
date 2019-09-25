@@ -1,12 +1,11 @@
 class Printer{
-  constructor(transaction){
-    this._transaction = transaction;
+  constructor(bank){
+    this._transaction = bank;
   }
 
   get transactionBalance(){
-    return this._transaction.balance
+    return this._transaction._balance
   }
-
 }
 
 module.exports = Printer;
