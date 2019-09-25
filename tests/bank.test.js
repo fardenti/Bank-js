@@ -5,11 +5,13 @@ beforeEach(() => {
   bank = new Bank();
 });
 
-test('returns deposit', () => {
+test('adds deposit to balance', () => {
   expect(bank.deposit(1000)).toEqual(1000);
 });
 
-
+test('withdraws amount from balance', () => {
+  expect(bank.withdraw(500)).toEqual(-500);
+});
 // test('returns date in format of mm/dd/yyyy', () => {
 //   MockDate.set('09-24-2019');
 //   expect(bank.dateFormatter(new Date())).toEqual('09/24/2019');
