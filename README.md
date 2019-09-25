@@ -64,6 +64,11 @@ npm run test
 npm test -- --coverage
 ```
 
+To run EsLint
+```
+eslint . 
+```
+
 ### Example of output
 
 ![Example Output](./output.png)
