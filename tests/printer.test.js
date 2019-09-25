@@ -1,5 +1,5 @@
-var Printer = require('../js/printer');
-var Bank = require('../js/bank');
+const Printer = require('../lib/printer');
+const Bank = require('../lib/bank');
 
 beforeEach(() => {
   printer = new Printer(bank = new Bank());
