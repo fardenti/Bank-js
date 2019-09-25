@@ -1,11 +1,19 @@
 class Printer{
   constructor(bank){
-    this._transaction = bank;
+    this._bank = bank;
+    this._history = [];
   }
 
-  get transactionBalance(){
-    return this._transaction._balance
+  get printStatement(){
+    return this._history;
   }
+
+  statement(){
+    var obj = this._bank._transaction
+    for (var i = 0; i < obj.length; i++)
+    return this._history.push(obj[i].date + ' || ' + obj[i].credit + ' || ' + obj[i].debit + ' || ' + obj[i].balance + '\n');
+  }
+
 }
 
 module.exports = Printer;

@@ -64,5 +64,9 @@ npm run test
 npm test -- --coverage
 ```
 
+### Example of output
+
+![Example Output](./output.png)
+
 
 
