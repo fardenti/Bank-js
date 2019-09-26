@@ -18,8 +18,3 @@ test('returns transaction log', () => {
     }
   );
 });
-
-// test('formats date to mm/dd/yyyy', () => {
-//   MockDate.set('09-24-2019');
-//   expect(transaction.dateFormatter()).toEqual('09/24/2019');
-// });
