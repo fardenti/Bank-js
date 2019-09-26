@@ -6,7 +6,8 @@ beforeEach(() => {
 });
 
 test('returns transaction log', () => {
-  expect(transaction.createLog()).toEqual({});
+  MockDate.set('09-24-2019');
+  expect(transaction.createLog(new Date(), 1000, 0, 1000)).toEqual({"newDate": "09/24/2019", "credit": 1000, "debit": 0, "balance": 1000});
 });
 
 test('formats date to mm/dd/yyyy', () => {
