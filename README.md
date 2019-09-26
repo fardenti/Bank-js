@@ -29,20 +29,14 @@ date || credit || debit || balance
 
 ```
 As a user
-So that I can add monies to my bank account
-I would like to be able make deposits
+So that I can have a bank statement
+I would like to be able to make deposit
 ```
 
 ```
 As a user
-So that I can add user my monies
-I would like to be able withdraw monies
-```
-
-```
-As a user
-So that I can see my transactions
-I would like to be able print my bank statement
+So that I can have a bank statement
+I would like to be able to withdraw
 ```
 
 ### Tech used
