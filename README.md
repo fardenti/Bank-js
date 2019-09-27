@@ -52,6 +52,11 @@ I would like to be able to withdraw
 run npm install
 ```
 
+To update npm dependencies
+```
+npm update --save/--save-dev
+```
+
 For Testing
 ```
 npm run test
@@ -62,7 +67,18 @@ To run EsLint
 ```
 eslint . 
 ```
+### How to run
 
+The app should be run in Terminal in node:
+
+```
+var Bank  = require('./lib/bank')
+bank = new Bank()
+bank.deposit(1000)
+bank.deposit(2000)
+bank.withdraw(500)
+bank.printStatement()
+```
 ### Example of output
 
 ![Example Output](./output.png)

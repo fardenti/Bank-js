@@ -12,8 +12,12 @@ describe('Feature Test', () => {
     MockDate.set('09-24-2019');
     bank.deposit(1000);
     bank.printStatement();
-    expect(log).toHaveBeenCalledWith('date || credit || debit || balance');
-    expect(log).toHaveBeenCalledWith('09/24/2019 || 1000 || 0 || 1000');
+    expect(log).toHaveBeenCalledWith(
+        'date || credit || debit || balance'
+    );
+    expect(log).toHaveBeenCalledWith(
+        '09/24/2019 || 1000.00 || 0.00 || 1000.00'
+    );
   });
 
   test('Prints statement two deposits and one withdraw', () => {
@@ -24,8 +28,14 @@ describe('Feature Test', () => {
     bank.withdraw(500);
     bank.printStatement();
     expect(log).toHaveBeenCalledWith('date || credit || debit || balance');
-    expect(log).toHaveBeenCalledWith('09/24/2019 || 1000 || 0 || 1000');
-    expect(log).toHaveBeenCalledWith('09/24/2019 || 2000 || 0 || 3000');
-    expect(log).toHaveBeenCalledWith('09/24/2019 || 0 || 500 || 2500');
+    expect(log).toHaveBeenCalledWith(
+        '09/24/2019 || 1000.00 || 0.00 || 1000.00'
+    );
+    expect(log).toHaveBeenCalledWith(
+        '09/24/2019 || 2000.00 || 0.00 || 3000.00'
+    );
+    expect(log).toHaveBeenCalledWith(
+        '09/24/2019 || 0.00 || 500.00 || 2500.00'
+    );
   });
 });
