@@ -44,7 +44,8 @@ I would like to be able to withdraw
 * JavaScript
 * Jest
 * ESLint
-* npm & yarn
+* npm
+* Node
 
 ### Setup
 
