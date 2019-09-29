@@ -1,6 +1,6 @@
 # Bank
 
-Bank app using JavaScript to practice my TDD skills and OO design, producing the best code possible within limited time (2 Days approx).
+Bank app using JavaScript to practice TDD and OOD.
 
 ## Specification
 
@@ -81,7 +81,6 @@ bank.printStatement()
 ```
 ### Example of output
 
-![Example Output](./output.png)
-
+<img src="output.png" width="400px" height="400px">
 
 
